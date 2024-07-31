@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maikron</title>
+
+  <!-- incluimos bootsrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- tipografias -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- incluimos la libreria fontawesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- estilos locales -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- icono maikron -->
+  <link rel="icon" href="img/Logo.png" type="image">
+
+</head>
+<body>
+
+  <!-- menu de navegacion -->
+ <header class="header">
+  <nav class="navbar navbar-expand-md fixed-top">
+    
+    <div class="container">
+      
+      <!-- logo menu -->
+      <img class="img navbar-brand" src="img/Logo.png" alt="">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      
+      <!-- boton de menu en movil -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- secciones -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+           <!-- secciones de inicio -->
+           <li class="nav-item dropdown">
+            <a class="nav-link " >
+              Inicio
+            </a>
+          </li>
+
+           <!-- seccion de journal -->
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Journal
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Journal</a></li>
+              <li><a class="dropdown-item" href="#">ICCBR</a></li>
+              <li><a class="dropdown-item" href="#">ICAIMH</a></li>
+            </ul>
+          </li>
+          
+          <!-- seccion de conferencias y eventos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Conferencias y eventos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Understanding SMEs Cybersecurity Concerns and Experience</a></li>
+             
+              <li><a class="dropdown-item" href="#">Captum: Interpretación de Modelos de Machine Learning</a></li>
+             
+              <li><a class="dropdown-item" href="#">HackHowl</a></li>
+            </ul>
+          </li>
+
+            <!-- seccion de proyectos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Proyectos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Proyecto: combatiendo incendios forestales</a></li>
+                <li><a class="dropdown-item" href="#">Título 1:</a></li>
+                <li><a class="dropdown-item" href="#">Título 2:</a></li>
+                <li><a class="dropdown-item" href="#">Servicio social</a></li>
+              </ul>
+            </li>
+          
+           <!-- seccion acerca de -->
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Historia</a></li>
+              
+              <li><a class="dropdown-item" href="#">Mision</a></li>
+             
+              <li><a class="dropdown-item" href="#">Visión</a></li>
+            </ul>
+          </li>
+          
+
+        </ul>
+
+        <!-- seccion de busqueda -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Buscar</button> 
+        </form>
+
+      </div>
+    </div>
+
+  </nav>
+ </header>
+  
+  <!-- seccion de inicio -->
+    <section class="section_presentacion " id="Home">  
+    
+      <div class="container presentacion_content">
+      <p class="">Maikron</p>
+      <h1 class=" ">
+        Asociación para el Avance de las Aplicaciones Inteligentes y Tecnologías con Impacto Social
+      </h1>
+      <p class="">
+        Vemos un mundo donde la informática ayuda a resolver los problemas del mañana, donde
+        Utilizamos nuestros conocimientos y habilidades para avanzar en la profesión y hacer un
+        impacto positivo.
+      </p>
+
+    </div>
+
+    </section>
+
+    <!-- seccion jorunal -->
+    <section class=" section__projects bg-dark" id="projects">
+     
+      <div class="container projects__content" data-aos="fade-right" data-aos-duration="950">
+        
+         <h2 class="projects__title text-white">
+          Journal
+          <hr class="linea">
+        </h2>
+
+        <div class="row justify-content-center align-items-center">
+          <div class="img-journal col-md-6 text-center">
+            <img src="img/Journal.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <p class="projects__description section__description text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem, inventore obcaecati reprehenderit quia cupiditate perspiciatis. Cumque, architecto quod atque officiis aliquid unde recusandae vero? Cupiditate cumque quo magnam illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dolores maiores consequatur aut? Sint voluptas dignissimos quasi vel minima quas repellat, dolorem cum soluta blanditiis maxime corrupti iste libero veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex, optio dolores quis perspiciatis ipsam esse omnis autem sit repellendus dicta eum reprehenderit ab aliquid sapiente, vel vero incidunt eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aliquid perspiciatis eius obcaecati deserunt delectus maiores repellat beatae. Magni sint corporis maxime unde perspiciatis numquam accusantium voluptates quisquam dignissimos accusamus.
+            </p>
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-warning"><a class="text-white text-decoration-none" href="#">Ver sitio</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion ICCBR -->
+    <section class="Seccion__ICCBR ">
+
+      <div class="container ">
+       
+       <h2 class="text-white">ICCBR</h2>
+       <hr class="linea">
+       <h3 class="text-white">The International Conference on Case-Based Reasoning (ICCBR)</h3>
+       
+       <figure class="contenedor-img text-center bg-transparent">
+         <img class="img-section" src="img/ICCBR.png" alt="">
+        </figure>
+       
+       <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus obcaecati amet exercitationem nesciunt fuga! Cupiditate, impedit velit provident quod beatae nesciunt quas architecto unde laborum vel quia debitis, quis maxime.
+       Aliquam cum incidunt adipisci aperiam dolorem eos, accusamus voluptates autem id officiis quidem non nesciunt deleniti nemo corrupti quaerat ea. Ut architecto iusto corrupti asperiores illum nam, accusantium expedita qui.
+       </p>
+ 
+       <div class="boton">
+         <button type="button" class="btn btn-outline-warning"><a class="text-white text-decoration-none" href="https://iccbr2024.org/">Ver sitio</a></button>
+     </div>
+ 
+      </div>
+      
+       
+    </section>
+
+    <!--Seccion ICAIM  -->
+    <section class="seccion__projects bg-light">
+        <div class="container projects__content ">
+         
+         <h2 class="text-dark">ICAIMH</h2>
+         <hr class="linea">
+         <h3 class="text-dark">WELCOME TO ICAIMH 2023, THE INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE FOR MENTAL HEALTH.</h3>
+         <figure class="contenedor-img text-center">
+          <img class="img-section img-section-2" src="img/logo_ICAIMH.png" alt="">
+         </figure>
+        
+  
+         <p class="text-dark">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quod tempora earum ducimus quas dolorum harum doloremque cumque nemo maiores suscipit qui, laboriosam culpa dolores doloribus nisi beatae iusto voluptatem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero delectus molestias eius optio eligendi voluptas, eum odio ducimus, exercitationem tenetur enim ab deleniti obcaecati quo! Non, iure. Beatae, quos nemo.
+         </p>
+  
+         <p class="text-dark">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, recusandae asperiores. Dolorem repudiandae vel id cumque similique ipsum dolore sint nobis suscipit harum porro et fugit culpa, sit tenetur mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti molestiae amet deleniti nostrum, totam quibusdam laboriosam reiciendis maxime, dicta corporis dolore illo sint sapiente quod saepe ullam voluptatibus voluptas?
+         </p>
+  
+         <div class="boton">
+          <button type="button" class=" btn btn-outline-warning"><a class="text-dark text-decoration-none" href="https://www.icaimh.org/">Ver sitio</a>
+          </button>
+          </div>
+  
+        </div>
+        
+        
+    </section>
+    
+    <!-- seccion conferencias y eventos -->
+    <section class="section__projects" id="Eventos">
+   
+      <div class="f3">
+    <div class="container projects__content ">
+      <div class="contenedor">
+
+         <h2 class="text-white">
+          Understanding SMEs Cybersecurity Concerns and Experience
+         </h2>
+
+          <!-- <figure class="card__img">
+          <img src="img/Evento_1.jpg" alt="img-event">
+          </figure>         
+           -->
+          <p class="text-white">
+            Se concluye con éxito el evento "Understanding SMEs Cybersecurity Concerns and Experience" .Aunado a ello se agradece a todos los que participaron y contribuyeron a este encuentro. Un especial reconocimiento al Dr. Placide Poba-Nzaou, de la University of Quebec en Montreal por su destacada presentación y aporte al conocimiento en el campo de la Ciberseguridad. 
+            El evento, que tuvo lugar en el auditorio Miguel Peón Toledo, del Instituto Tecnológico de Mérida, fue un espacio de valioso aprendizaje y diálogo sobre las tendencias y desafíos actuales en ciberseguridad.
+          </p>
+         
+       </div>
+      </div>
+      </div>
+       
+      <div class="bg-light">
+      <div class="container projects__content">
+      
+        <div class="text__container ">
+          
+          <!-- <figure class="card__img">
+            <img src="img/Evento_2.jpg" alt="Web Dev Creative Logo">
+          </figure>    -->
+
+           <h2 class="projects__title">
+            Captum: Interpretación de Modelos de Machine Learning
+           </h2>
+            
+            <p class="">
+              Se concluye con éxito el evento "Captum: Interpretación de Modelos de Machine Learning" .Aunado a ello,se agradece a todos los que participaron y contribuyeron a este encuentro. Un especial reconocimiento al MSc. Alejandro Pérez Muñoz por su destacada presentación y aporte al conocimiento en el campo del Machine Learning.
+              El evento, que tuvo lugar en la Sala Plenaria del Nodo de Creatividad para la Innovación y el Emprendimiento del Campus Norte del Instituto Tecnológico de Mérida, fue un espacio de valioso aprendizaje y diálogo sobre las tendencias y desafíos actuales en inteligencia artificial.
+              Gracias a todos los asistentes por su interés y participación activa. Esperamos contar con su presencia en futuras iniciativas. Agradecemos produndamente el apoyo del TECNM-Mérida por las gestiones para ser sede de este evento y esperamos encontrarnos nuevamente. 
+  
+            </p>
+           
+         </div>
+         
+        </div>
+      </div>
+      
+    </section>
+
+     <!-- seccion hackHowl -->
+     <section class="seccion__projects bg-dark">
+      <div class="container projects__content ">
+       
+       <h2 class="text-white">HackHowl</h2>
+       <hr class="linea">
+       <h3 class="text-white">¡Únete a HackHowl! Compite en retos de Capture the Flag y Bug Bounty para mejorar y demostrar tus habilidades cibernéticas.</h3>
+       <figure class="contenedor-img text-center">
+        <img class="img-section" src="img/Hacklow.jfif" alt="">
+       </figure>
+      
+
+       <p class="text-white">
+        HackHowl es un equipo apasionado de profesionales en ciberseguridad comprometidos a crear un espacio educativo y emocionante para la próxima generación de expertos en hacking ético. Brindando a los participantes la oportunidad de aplicar sus conocimientos en entornos prácticos y enfrentarse a desafíos del mundo real.
+       </p>
+
+       <p class="text-white">
+        HackHowl es un evento virtual de ciberseguridad diseñado para profesionales, aficionados y estudiantes apasionados por el hacking ético y la seguridad informática. Este evento de tres días ofrece una plataforma única para desafiar tus habilidades, aprender de los mejores y competir en un ambiente seguro y controlado
+       </p>
+
+       <div class="boton">
+        <button type="button" class=" btn btn-outline-warning"><a class="text-white text-decoration-none" href="https://maikron.org/hackhowl/">Ver sitio</a>
+        </button>
+        </div>
+
+      </div>
+      
+      
+     </section>
+
+    <!-- Section Projects -->
+    <section class="section__projects f2" id="projects">
+
+      <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+  
+        <h2 class="projects__title">
+            <span class="span">Combatiendo los Incendios Forestales con Tecnología Avanzada: </span>Innovación en Detección Temprana mediante Inteligencia Artificial
+          <hr class="linea">
+        </h2>
+        <p class="projects__description section__description">
+          En Maikron, en colaboración con CentroGeo, se está llevando a cabo un importante proyecto con el objetivo de transformar la forma en que se detectan los incendios forestales en México. Utilizando tecnologías avanzadas de inteligencia artificial, específicamente redes neuronales convolucionales, el proyecto tiene como objetivo desarrollar un modelo robusto para identificar incendios forestales en sus primeras etapas a través de imágenes de satélite. Este enfoque no sólo promete mejorar la eficacia en la lucha contra la deforestación sino que también supera los métodos tradicionales actualmente en uso. 
+          A Randy Alexandro Santos Poot, estudiante de pregrado del Instituto Tecnológico de Mérida, le motiva tanto el deseo de ayudar a la comunidad como la oportunidad de profundizar sus conocimientos en inteligencia artificial y aprendizaje automático como parte de su proyecto de servicio social. “Poder ayudar a la comunidad desarrollando un proyecto y además aprender mucho y desarrollar mis habilidades durante el mismo”, menciona Randy respecto a sus motivaciones.
+        </p>
+        <p class="projects__description section__description">
+          A lo largo del proyecto, Randy ha mejorado significativamente su comprensión de la inteligencia artificial y, aunque hasta ahora no se ha enfrentado a grandes desafíos, anticipa que lidiar con imágenes satelitales será su mayor prueba, dado que muchos de los conceptos requeridos son nuevos para él.  
+          El objetivo principal ha pasado de predecir los incendios a detectarlos en sus primeras fases, lo que se considera más factible y útil para las autoridades que luchan contra estos desastres naturales. "Poder detectar incendios forestales en sus primeras etapas para que las autoridades puedan responder a estos desastres naturales", explica Randy, enfatizando la necesidad crítica de mejorar las herramientas disponibles.
+        </p>
+        <p class="projects__description section__description">
+          De cara al futuro, Randy ve este proyecto no sólo como una contribución a su campo de estudio sino también como una herramienta práctica para combatir un problema medioambiental creciente. Su consejo para otras personas interesadas en trabajar en proyectos de impacto social es claro: "Haganlo por el bien de nuestra comunidad e interactúen entre sí para compartir ideas y conocimientos".  
+          Además de su compromiso con este proyecto innovador, Randy disfruta de los videojuegos competitivos, que proporcionan un equilibrio necesario entre su vida académica y personal.
+          Este proyecto destaca el potencial de la inteligencia artificial para abordar problemas ambientales complejos y demuestra cómo la tecnología puede ser una fuerza poderosa para el bien social y ambiental.
+        </p>
+      </div>
+  
+    </section>
+
+    <!-- seccion servicio social projects -->
+    <section class="section__projects bg-white" id="projects">
+
+      <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+  
+        <h2 class="projects__title">
+            <span class="span">Titutlo: </span>Estudiante de Mérida Impulsa el Aprendizaje Estudiantil a Través de la Innovación Tecnológica en Maikron
+          <hr class="linea">
+        </h2>
+        <p class="projects__description section__description">
+          Delmy Luceli Lira Balam, estudiante del Instituto Tecnológico de Mérida, está a la vanguardia de un emocionante proyecto en Maikron que busca facilitar y enriquecer la experiencia educativa de futuros estudiantes mediante una plataforma web avanzada. Este proyecto, aunque complicado, se alinea perfectamente con sus intereses y área de estudio, motivándola a enfrentar los retos con determinación y entusiasmo. "El proyecto es sobre algo que realmente me interesa, y aunque es complicado, el enfoque en mi área de estudio me motivó a involucrarme", explica Delmy sobre su elección de proyecto. Desde el comienzo, ha estado inmersa en un aprendizaje intensivo, adquiriendo conocimientos sobre tecnologías avanzadas y realizando su primer despliegue de un servidor en AWS y Docker.
+        </p>
+        <p class="projects__description section__description">
+          La plataforma que Delmy está ayudando a desarrollar está diseñada para apoyar a los estudiantes, facilitando su curva de aprendizaje con recursos accesibles y bien estructurados. "Apoya la implementación de una plataforma web de apoyo a estudiantes, de forma en que facilite a los futuros estudiantes su curva de aprendizaje", señala. Uno de los principales desafíos ha sido la gran cantidad de nueva información y tecnologías que Delmy ha tenido que aprender. "La gran cantidad de nueva información que tengo que conocer, tecnologías, entre otras cosas, ha sido abrumadora, pero la investigación continua ha sido clave", comenta sobre cómo ha enfrentado estos desafíos. Aunque el proyecto aún no ha sido presentado a la comunidad, Delmy es optimista sobre su impacto potencial: "Un fácil acceso a los beneficios de la plataforma, y para los que trabajen en este proyecto a futuro una fácil ruta de aprendizaje". Ella cree que las habilidades y conocimientos adquiridos durante este proyecto abrirán nuevas oportunidades en su futuro profesional.
+
+          Delmy también ofrece un consejo valioso para aquellos que se enfrentan a proyectos desafiantes: "Que si es complicado, y parece hasta cierto punto imposible, pero que si es algo que le gusta está bien arriesgarse".
+        </p>
+        <p class="projects__description section__description">
+          Además de su dedicación al proyecto, Delmy participa activamente en programas de apoyo estudiantil, conferencias, y un proyecto de simulación de desarrollo, lo que subraya su compromiso con el aprendizaje y el desarrollo profesional. A pesar de su apretada agenda, ha encontrado en este proyecto una oportunidad para crecer y aplicar sus habilidades sin necesidad de tiempo presencial, lo que le permite manejar eficazmente sus múltiples compromisos.
+
+          El proyecto de Delmy en Maikron no solo demuestra su capacidad para manejar y superar desafíos tecnológicos, sino también su pasión por hacer una diferencia significativa en la educación y la experiencia estudiantil.
+        </p>
+      </div>
+
+      <div class="f1">
+        <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+  
+          <h2 class="projects__title text-white">
+              <span class="span">Titulo: </span>Estudiante de Mérida Colabora en la Detección de Especies Parasitarias para Proteger la Vegetación
+            <hr class="linea">
+          </h2>
+          <p class="projects__description section__description text-white">
+            Juan Antonio Vidal Allerhand, estudiante del Instituto Tecnológico de Mérida, contribuye en un proyecto innovador que utiliza la tecnología para abordar un problema ambiental crítico: la detección de especies parasitarias en vegetación. Este proyecto no solo tiene el potencial de mejorar la salud y la calidad de vida de la vegetación sino también de prevenir la propagación de estas especies a otros árboles e incluso a otros ecosistemas.
+  
+            Juan Antonio explica la motivación detrás de su participación: "Quería aprender a buscar soluciones tecnológicas para las problemáticas cotidianas." A través de este proyecto, ha adquirido habilidades significativas en la manipulación de imágenes para la detección visual, utilizando criterios de búsqueda desarrollados por inteligencia artificial.
+            
+            
+          </p>
+          <p class="projects__description section__description text-white">
+            
+  
+            La colaboración es un pilar central en su experiencia, como lo describe Juan Antonio: "Ha sido bastante interesante la forma que toma un equipo. Estoy con otros chicos en el área y, cómo yo, tenemos un punto de vista diferente al momento de hallar soluciones." El objetivo específico del proyecto es identificar especies parasitarias. "Contribuye al conocimiento, estamos utilizando herramientas y métodos específicos," dice Juan Antonio. Los resultados iniciales han sido prometedores, con una tasa de detección del ochenta por ciento, lo cual es un excelente punto de partida para futuras mejoras.
+            
+            Uno de los mayores retos ha sido la segmentación de imágenes y las limitaciones del poder computacional para entrenar el modelo de IA. Sin embargo, estos desafíos no han mermado su determinación. Juan Antonio está optimista sobre el impacto potencial de su trabajo: "Si todo sale bien, el proyecto podrá identificar a la especie y esto dará pie a que sea controlada o erradicada."
+            
+            
+          </p>
+          <p class="projects__description section__description text-white">
+            Mirando hacia el futuro, Juan Antonio ve su proyecto expandiéndose más allá de los parques a diferentes ecosistemas. Personalmente, se ve a sí mismo continuando con su compromiso de encontrar soluciones tecnológicas para diversos campos y ámbitos. Su consejo para aquellos que se inician en proyectos similares es valioso: "Dar el primer paso siempre da miedo, esto se afronta cara a cara. Una vez hayas caminado, temeroso y con el cuerpo temblando, verás que es algo en lo que muchos te apoyarán." Además de su dedicación a la ciencia, Juan Antonio tiene una vida rica en hobbies que incluyen juegos de rol como Pathfinder y Dungeons & Dragons, disfrutar de la música, ver series, comer y leer. Estos intereses no solo enriquecen su vida personal sino que también le aportan un equilibrio necesario para su trabajo científico.
+            
+            El proyecto de Juan Antonio en Maikron es un claro ejemplo de cómo la pasión por la tecnología y el cuidado del medio ambiente pueden fusionarse para crear soluciones significativas que benefician tanto a nuestra sociedad como a nuestro planeta.
+          </p>
+        </div>
+      </div>
+      
+  
+    </section>
+
+    <!-- seccion servicio social -->
+    <section class="section__projects bg-white">
+    
+      <div class="container projects__content">
+        
+        <h2>Servicios Social</h2>
+        <hr class="linea">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sint optio aspernatur adipisci cum exercitationem cupiditate veniam ex magnam qui officia quia, dolore modi dolorum eum explicabo error molestias suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis eum molestiae nobis dolores tenetur, inventore ab at officiis minus. Expedita iste eligendi, iure est atque impedit quisquam doloremque! Quis.</p>
+
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="img/Social-Service.jfif" class="card-img-top" alt="Música electrónica 2021">
+              <div class="card-body">
+                <h5 class="card-title">title</h5>
+                <p class="card-text">Name</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="img/Social-Service.jfif" class="card-img-top" alt="Rock en Los Ángeles">
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">name</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="img/Social-Service.jfif" class="card-img-top" alt="Rock en Los Ángeles">
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">name</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="img/Social-Service.jfif" class="card-img-top" alt="Rock en Los Ángeles">
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">name</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- seccion acerca de -->
+    <section class="section__projects" id="projects">
+      
+      <div class="bg-dark">
+        <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+          <h2 class="projects__title section__title">
+            <span class="text-white">
+             Historia
+            </span>
+            <hr class="linea">
+          </h2>
+          <figure class="contenedor-img text-center">
+            <img class=" img-section-3" src="img/Logo.png" alt="">
+           </figure>
+          
+    
+          <p class="projects__description section__description text-white">
+            En el contexto de México, como en muchas otras partes del mundo, la inteligencia artificial (IA) a menudo ha sido envuelta en un velo de misterio y especulación. Desde los relatos de ciencia ficción hasta los debates sobre el futuro del trabajo, la IA ha sido tema de fascinación y preocupación en igual medida. Sin embargo, en medio de estos mitos y percepciones distorsionadas, México se encuentra en una encrucijada única: tiene el potencial de aprovechar los beneficios de la IA para impulsar el progreso económico y social, al tiempo que enfrenta desafíos particulares en términos de acceso, capacitación y regulación. 
+            Es de esta forma que, en un mundo donde los avances tecnológicos y la inteligencia artificial a menudo son vistos con escepticismo y temor, nace la Asociación MAIKRON, fundada por un grupo de visionarios y entusiastas de la tecnología y la ciencia. La razón del nacimiento de dicha asociación radica en demostrar que la IA y la tecnología pueden ser fuerzas positivas que contribuyen al bienestar de la sociedad.
+          </p>
+         
+        </div>
+      </div>
+    
+      <div class="f2">
+        <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+
+          <h2 class="projects__title section__title">
+            <span>
+             Misión
+            </span>
+            <hr class="linea">
+          </h2>
+          
+    
+          <p class="projects__description section__description">
+            Impulsar el uso responsable y ético de la tecnología y la inteligencia artificial en México puede mejorar la calidad de vida y contribuir al desarrollo sostenible del país. Esto incluye integrar la tecnología en la educación, mejorar la salud mediante soluciones tecnológicas, fomentar la creación de empleos y empresas en el sector tecnológico, y utilizar la IA para proteger el medio ambiente. También es crucial asegurar que todos los avances beneficien a toda la sociedad, reduciendo la brecha digital y garantizando la accesibilidad.
+            Desarrollar marcos éticos y normativos claros, incentivar la investigación y promover la colaboración entre distintos sectores son acciones clave. Con estos esfuerzos, México puede convertirse en un líder en tecnología responsable y ética, mejorando tanto la economía como la calidad de vida de sus ciudadanos.
+    
+          </p>
+         
+        </div>
+      </div>
+      
+      <div class="f1">
+        <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+  
+          <h2 class="projects__title section__title">
+            <span class="text-white">
+             Visión
+            </span>
+            <hr class="linea">
+          </h2>
+          
+    
+          <p class="projects__description section__description text-white">
+            Ser líder en el uso responsable y ético de la tecnología y la inteligencia artificial en México, destacándose por su contribución al bienestar de las personas y al desarrollo sostenible del país. Promover el uso de la tecnología y la IA de manera que beneficie a la sociedad en general, mejorando la calidad de vida y apoyando el crecimiento económico sostenible. Asegurar que las innovaciones tecnológicas sean accesibles y equitativas, reduciendo la brecha digital y protegiendo el medio ambiente.  Desarrollar marcos éticos y normativos claros y fomentar la colaboración entre el gobierno, la academia y el sector privado. Al liderar estos esfuerzos, México puede ser reconocido por su compromiso con la tecnología responsable y el desarrollo sostenible.
+          </p>
+         
+        </div>
+      </div>
+   
+    </section>
+
+
+    <!-- Pie de pagina  -->
+    <footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row ">
+      <!-- Sección 1 -->
+      <div class="col-12 col-md-3">
+        <h5 class="text-warning">Sobre Maikron</h5>
+        <ul class="list-unstyled footer-content">
+          <li><a href="#" class="text-white text-decoration-none">Lorem ipsum, dolor sit</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Lorem ipsum, dolor sit</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Lorem ipsum, dolor sit</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Lorem ipsum, dolor sit</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Lorem ipsum, dolor sit</a></li>
+         
+        </ul>
+      </div>
+
+      <!-- Sección 2 -->
+      <div class="col-12 col-md-3">
+        <h5 class="text-warning">Sitios de interes</h5>
+        <ul class="list-unstyled footer-content">
+          <li><a href="#" class="text-white text-decoration-none">Action</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Action</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Action</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Action</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Action</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Action</a></li>
+        </ul>
+      </div>
+
+      <!-- Sección 3 -->
+      <div class="col-12 col-md-3">
+        <h5 class="text-warning">Contacto</h5>
+       
+        <address>
+          <br>
+          Ucu, Yucatán, México
+          <br>
+          <a href="mailto:info@ejemplo.com" class="text-white">maikron@gmail.com</a>
+          <br>
+          Teléfono: +123 456 789
+        </address>
+
+      </div>
+
+      <!-- Sección 4 -->
+      <div class="col-12 col-md-3">
+        <h5 class="text-warning">Redes Sociales</h5>
+        <br>
+        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+    </footer>
+
+
+  <!-- script de js de bootrsap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- javascript local -->
+   <script src="js/js.js"></script>
+</body>
+</html>
