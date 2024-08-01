@@ -56,6 +56,16 @@ p{
   padding-bottom: 4rem;
 }
 
+/*---animacion de imagenes----*/
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 /* ------------------------estilos a la barra de navegacion--------------------- */
 
 .navbar{
@@ -114,7 +124,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 5rem;
-  padding-bottom: 5rem;  
+  padding-bottom: 5rem;
+  animation: moveBackground 10s linear infinite; /* animacion */
 }
 
 .section_presentacion::before {
@@ -167,6 +178,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   padding: 2rem;
+  animation: moveBackground 20s linear infinite; /* animacion */
 }
 
 .Seccion__ICCBR::before {
@@ -283,7 +295,7 @@ header {
   /* estilos a la seccion del ICAIM */
   .img-section-2{
     background-color: var(--color-texto);
-  
+    
     height: 100px;
   }
 
