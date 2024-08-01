@@ -1,0 +1,308 @@
+/* ---------estilos generales------------------ */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  --color-fondo: #001B38;
+  --color-texto:#DEEEFF;
+  --color-fondo-2:#013974;
+  --c-yellow-primary: #ffdea8;
+  --fuente-texto:  font-family: "Rubik", sans-serif;
+  --fuente-texto-2:  font-family: "DM Sans", sans-serif;;
+
+}
+
+.f1{
+  background-color: var(--color-fondo-2);
+}
+.f2{
+  background-color: var(--color-texto);
+}
+.f3{
+  background-color: var(--color-fondo);
+}
+.span{
+  font-weight: 500;
+}
+h1{
+  text-align: center;
+  font-family: var(--fuente-texto-2);
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+h2{
+  text-align: left;
+  font-family: var(--fuente-texto-2);
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-family: var(--fuente-texto-2);
+}
+
+p{
+  text-align: center;
+  font-family: var(--fuente-texto-2);
+  line-height: 2rem;
+}
+
+.section__projects{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/*---animacion de imagenes----*/
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ------------------------estilos a la barra de navegacion--------------------- */
+
+.navbar{
+  background-color: var(--color-fondo);
+}
+
+.nav-link{
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-link:hover{
+  color: var(--c-yellow-primary);
+}
+.nav-link:active{
+  color: white;
+}
+.navbar-nav .nav-link {
+  color: white; /* Color inicial del enlace */
+}
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link:focus, 
+.navbar-nav .nav-link:active {
+  color: white; /* Color del enlace en hover, focus y active */
+  text-decoration: none; /* Elimina la decoración del texto */
+}
+
+.navbar-toggler {
+  text-decoration: none;
+  color: var(--color-fondo); /* Cambia el color del botón a blanco */
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");/* Cambia el ícono a blanco */
+}
+
+.img{
+  width: 50px;
+}
+
+header {
+  position: relative;
+  padding: 1rem;
+  background-color: var(--color-fondo);
+}
+
+/* ------------------contenido inicio------------------------ */
+
+.section_presentacion {
+  background-color: var(--color-fondo-2);
+  position: relative;
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  animation: moveBackground 10s linear infinite; /* animacion */
+}
+
+.section_presentacion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Oscurece la imagen */
+  opacity: 0.8; /* Hace que la imagen sea opaca */
+  z-index: 1;
+}
+
+.section_presentacion .container {
+  position: relative;
+  z-index: 2;
+}
+
+.presentacion_content {
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  top: 1rem;
+}
+
+/* -----------------------------estilos a las secciones ------------------------------ */
+.projects__content{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.projects__content p {
+  text-align: left;
+  font-size: 1.4rem;
+  font-family: var(--fuente-texto);
+  font-weight: 300;
+}
+
+/* ----------------------------estilos seccion ICCBR--------------------------------------------- */
+
+.Seccion__ICCBR{
+  background-color: var(--color-fondo-2);
+  position: relative;
+  background-image: url('../img/ICBBR-FOND.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  animation: moveBackground 20s linear infinite; /* animacion */
+}
+
+.Seccion__ICCBR::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
+  opacity: 0.9; /* Hace que la imagen sea opaca */
+  z-index: 1;
+}
+.Seccion__ICCBR .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/*--------------- estilos hackhowl---------------------------------- */
+.img-section{
+  width: 80%;
+  height: 380px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.boton{
+  text-align: center;
+  width: 100%;
+
+}
+.boton , .btn{
+  margin: auto;
+  width: 50%;
+}
+
+.btn:hover{
+  transition: all 0.5s;
+}
+.img-section-3{
+ 
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+/* ---------------------------Pie de pagina--------------------------- */
+
+.footer-content li{
+  padding-top: 1.2rem;
+}
+
+/* ----------------------Responsive desing------------------------------- */
+@media (max-width: 600px) {
+  
+  /* -------------------estilos generales---------------- */
+  h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h2{ 
+    font-size: 2rem;
+  }
+  
+  h3{
+    font-size: 1.3rem;
+  }
+  p{
+    line-height: 1.5rem;
+  }
+
+  /*---------------------- seccion de inicio-------- */
+  .section_presentacion {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .presentacion_content {
+    color: white;
+    padding: 25px;
+    gap: 10px;
+    top: 15px;
+  }
+  /* ----------------------estilo a la seccion journal-------------- */
+  .img-journal{   
+    padding: 20px 10px 40px 10px;
+  }
+  /* --------estilos a las secciones--------- */
+  .section__projects{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .projects__content{
+    padding: 1rem;
+  }
+  .projects__content p {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  /* --------------estilos a la seccion ICCBR------------ */
+  .img-section{
+    width: 100%;
+    height: 200px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .boton , .btn{
+    width: 70%;
+  }
+
+  /* estilos a la seccion del ICAIM */
+  .img-section-2{
+    background-color: var(--color-texto);
+    
+    height: 100px;
+  }
+
+  
+   /*---------------------- estilos al pie de pagina --------------------*/
+  .footer-content li{
+    padding-top: 5px;
+  }
+  
+}
