@@ -237,7 +237,7 @@ header {
     font-size: 1.3rem;
   }
   p{
-    line-height: 1.2rem;
+    line-height: 1.5rem;
   }
 
   /*---------------------- seccion de inicio-------- */
@@ -261,12 +261,12 @@ header {
     padding-bottom: 2rem;
   }
   .projects__content{
-    padding: 2rem;
+    padding: 1rem;
   }
   .projects__content p {
     padding-bottom: 10px;
-    font-size: 0.8rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 
   /* --------------estilos a la seccion ICCBR------------ */
