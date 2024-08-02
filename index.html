@@ -27,14 +27,14 @@
 
   <!-- menu de navegacion -->
  <header class="header">
-  <nav class="navbar navbar-expand-md fixed-top">
-    
+
+  <nav class="navbar navbar-expand-md fixed-top ">  
     <div class="container">
       
       <!-- logo menu -->
       <img class="img navbar-brand" src="img/Logo.png" alt="">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      
+   
+  
       <!-- boton de menu en movil -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
          
            <!-- secciones de inicio -->
            <li class="nav-item dropdown">
-            <a class="nav-link " >
+            <a class="nav-link " href="#HOME" >
               Inicio
             </a>
           </li>
@@ -57,10 +57,12 @@
               Journal
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Journal</a></li>
-              <li><a class="dropdown-item" href="#">ICCBR</a></li>
-              <li><a class="dropdown-item" href="#">ICAIMH</a></li>
+
+              <li><a class="dropdown-item" href="#JOURNAL">Journal</a></li>
+              <li><a class="dropdown-item" href="#ICCBR">ICCBR</a></li>
+              <li><a class="dropdown-item" href="#ICAIM">ICAIMH</a></li>
             </ul>
+
           </li>
           
           <!-- seccion de conferencias y eventos -->
@@ -69,11 +71,11 @@
               Conferencias y eventos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Understanding SMEs Cybersecurity Concerns and Experience</a></li>
+              <li><a class="dropdown-item" href="#Evento_1">Understanding SMEs Cybersecurity Concerns and Experience</a></li>
              
-              <li><a class="dropdown-item" href="#">Captum: Interpretación de Modelos de Machine Learning</a></li>
+              <li><a class="dropdown-item" href="#Evento_2">Captum: Interpretación de Modelos de Machine Learning</a></li>
              
-              <li><a class="dropdown-item" href="#">HackHowl</a></li>
+              <li><a class="dropdown-item" href="#HACKHOWOl">HackHowl</a></li>
             </ul>
           </li>
 
@@ -83,10 +85,9 @@
                 Proyectos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Proyecto: combatiendo incendios forestales</a></li>
-                <li><a class="dropdown-item" href="#">Título 1:</a></li>
-                <li><a class="dropdown-item" href="#">Título 2:</a></li>
-                <li><a class="dropdown-item" href="#">Servicio social</a></li>
+                <li><a class="dropdown-item" href="#PRO_1">Título 1:</a></li>
+                <li><a class="dropdown-item" href="#PRO_2">Título 2:</a></li>
+                <li><a class="dropdown-item" href="#SERVICIO">Servicio social</a></li>
               </ul>
             </li>
           
@@ -96,11 +97,11 @@
               Acerca de
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Historia</a></li>
+              <li><a class="dropdown-item" href="#HISTORIA">Historia</a></li>
               
-              <li><a class="dropdown-item" href="#">Mision</a></li>
+              <li><a class="dropdown-item" href="#MISION">Mision</a></li>
              
-              <li><a class="dropdown-item" href="#">Visión</a></li>
+              <li><a class="dropdown-item" href="#VISION">Visión</a></li>
             </ul>
           </li>
           
@@ -120,7 +121,7 @@
  </header>
   
   <!-- seccion de inicio -->
-    <section class="section_presentacion " id="Home">  
+    <section class="section_presentacion " id="HOME">  
     
       <div class="container presentacion_content">
       <p class="">Maikron</p>
@@ -138,7 +139,7 @@
     </section>
 
     <!-- seccion jorunal -->
-    <section class=" section__projects bg-dark" id="projects">
+    <section class=" section__projects bg-dark" id="JOURNAL">
      
       <div class="container projects__content" data-aos="fade-right" data-aos-duration="950">
         
@@ -164,7 +165,7 @@
     </section>
 
     <!-- Seccion ICCBR -->
-    <section class="Seccion__ICCBR ">
+    <section class="Seccion__ICCBR " id="ICCBR">
 
       <div class="container ">
        
@@ -181,8 +182,9 @@
        </p>
  
        <div class="boton">
-         <button type="button" class="btn btn-outline-warning"><a class="text-white text-decoration-none" href="https://iccbr2024.org/">Ver sitio</a></button>
-     </div>
+         <button type="button" class="btn btn-outline-warning"><a class="text-white text-decoration-none" href="https://iccbr2024.org/">Ver sitio</a>
+        </button>
+       </div>
  
       </div>
       
@@ -190,7 +192,7 @@
     </section>
 
     <!--Seccion ICAIM  -->
-    <section class="seccion__projects bg-light">
+    <section class="seccion__projects bg-light" id="ICAIM">
         <div class="container projects__content ">
          
          <h2 class="text-dark">ICAIMH</h2>
@@ -220,10 +222,11 @@
     </section>
     
     <!-- seccion conferencias y eventos -->
-    <section class="section__projects" id="Eventos">
+    <section class="section__projects" id="">
    
-      <div class="f3">
+      <div class="f3 " id="Evento_1">
     <div class="container projects__content ">
+      
       <div class="contenedor">
 
          <h2 class="text-white">
@@ -243,7 +246,7 @@
       </div>
       </div>
        
-      <div class="bg-light">
+      <div class="bg-light" id="Evento_2">
       <div class="container projects__content">
       
         <div class="text__container ">
@@ -271,7 +274,7 @@
     </section>
 
      <!-- seccion hackHowl -->
-     <section class="seccion__projects bg-dark">
+     <section class="seccion__projects bg-dark" id="HACKHOWOl">
       <div class="container projects__content ">
        
        <h2 class="text-white">HackHowl</h2>
@@ -303,7 +306,7 @@
     <!-- Section Projects -->
     <section class="section__projects f2" id="projects">
 
-      <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+      <div class="container projects__content " data-aos="fade-right" data-aos-duration="950" id="PRO_1">
   
         <h2 class="projects__title">
             <span class="span">Combatiendo los Incendios Forestales con Tecnología Avanzada: </span>Innovación en Detección Temprana mediante Inteligencia Artificial
@@ -329,21 +332,23 @@
     <!-- seccion servicio social projects -->
     <section class="section__projects bg-white" id="projects">
 
-      <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
+      <div class="container projects__content " data-aos="fade-right" data-aos-duration="950" id="PRO_2">
   
         <h2 class="projects__title">
             <span class="span">Titutlo: </span>Estudiante de Mérida Impulsa el Aprendizaje Estudiantil a Través de la Innovación Tecnológica en Maikron
           <hr class="linea">
         </h2>
-        <p class="projects__description section__description">
+
+    
+        <p class=" projects__description section__description">
           Delmy Luceli Lira Balam, estudiante del Instituto Tecnológico de Mérida, está a la vanguardia de un emocionante proyecto en Maikron que busca facilitar y enriquecer la experiencia educativa de futuros estudiantes mediante una plataforma web avanzada. Este proyecto, aunque complicado, se alinea perfectamente con sus intereses y área de estudio, motivándola a enfrentar los retos con determinación y entusiasmo. "El proyecto es sobre algo que realmente me interesa, y aunque es complicado, el enfoque en mi área de estudio me motivó a involucrarme", explica Delmy sobre su elección de proyecto. Desde el comienzo, ha estado inmersa en un aprendizaje intensivo, adquiriendo conocimientos sobre tecnologías avanzadas y realizando su primer despliegue de un servidor en AWS y Docker.
         </p>
-        <p class="projects__description section__description">
+        <p class=" projects__description section__description">
           La plataforma que Delmy está ayudando a desarrollar está diseñada para apoyar a los estudiantes, facilitando su curva de aprendizaje con recursos accesibles y bien estructurados. "Apoya la implementación de una plataforma web de apoyo a estudiantes, de forma en que facilite a los futuros estudiantes su curva de aprendizaje", señala. Uno de los principales desafíos ha sido la gran cantidad de nueva información y tecnologías que Delmy ha tenido que aprender. "La gran cantidad de nueva información que tengo que conocer, tecnologías, entre otras cosas, ha sido abrumadora, pero la investigación continua ha sido clave", comenta sobre cómo ha enfrentado estos desafíos. Aunque el proyecto aún no ha sido presentado a la comunidad, Delmy es optimista sobre su impacto potencial: "Un fácil acceso a los beneficios de la plataforma, y para los que trabajen en este proyecto a futuro una fácil ruta de aprendizaje". Ella cree que las habilidades y conocimientos adquiridos durante este proyecto abrirán nuevas oportunidades en su futuro profesional.
 
           Delmy también ofrece un consejo valioso para aquellos que se enfrentan a proyectos desafiantes: "Que si es complicado, y parece hasta cierto punto imposible, pero que si es algo que le gusta está bien arriesgarse".
         </p>
-        <p class="projects__description section__description">
+        <p class=" projects__description section__description">
           Además de su dedicación al proyecto, Delmy participa activamente en programas de apoyo estudiantil, conferencias, y un proyecto de simulación de desarrollo, lo que subraya su compromiso con el aprendizaje y el desarrollo profesional. A pesar de su apretada agenda, ha encontrado en este proyecto una oportunidad para crecer y aplicar sus habilidades sin necesidad de tiempo presencial, lo que le permite manejar eficazmente sus múltiples compromisos.
 
           El proyecto de Delmy en Maikron no solo demuestra su capacidad para manejar y superar desafíos tecnológicos, sino también su pasión por hacer una diferencia significativa en la educación y la experiencia estudiantil.
@@ -357,14 +362,16 @@
               <span class="span">Titulo: </span>Estudiante de Mérida Colabora en la Detección de Especies Parasitarias para Proteger la Vegetación
             <hr class="linea">
           </h2>
-          <p class="projects__description section__description text-white">
+
+          <i class="fa-solid fa-chevron-right toggle-button"></i>
+          <p  class="project-description projects__description section__description text-white hidden">
             Juan Antonio Vidal Allerhand, estudiante del Instituto Tecnológico de Mérida, contribuye en un proyecto innovador que utiliza la tecnología para abordar un problema ambiental crítico: la detección de especies parasitarias en vegetación. Este proyecto no solo tiene el potencial de mejorar la salud y la calidad de vida de la vegetación sino también de prevenir la propagación de estas especies a otros árboles e incluso a otros ecosistemas.
   
             Juan Antonio explica la motivación detrás de su participación: "Quería aprender a buscar soluciones tecnológicas para las problemáticas cotidianas." A través de este proyecto, ha adquirido habilidades significativas en la manipulación de imágenes para la detección visual, utilizando criterios de búsqueda desarrollados por inteligencia artificial.
             
             
           </p>
-          <p class="projects__description section__description text-white">
+          <p  class="project-description projects__description section__description text-white hidden">
             
   
             La colaboración es un pilar central en su experiencia, como lo describe Juan Antonio: "Ha sido bastante interesante la forma que toma un equipo. Estoy con otros chicos en el área y, cómo yo, tenemos un punto de vista diferente al momento de hallar soluciones." El objetivo específico del proyecto es identificar especies parasitarias. "Contribuye al conocimiento, estamos utilizando herramientas y métodos específicos," dice Juan Antonio. Los resultados iniciales han sido prometedores, con una tasa de detección del ochenta por ciento, lo cual es un excelente punto de partida para futuras mejoras.
@@ -373,7 +380,7 @@
             
             
           </p>
-          <p class="projects__description section__description text-white">
+          <p  class="project-description projects__description section__description text-white hidden">
             Mirando hacia el futuro, Juan Antonio ve su proyecto expandiéndose más allá de los parques a diferentes ecosistemas. Personalmente, se ve a sí mismo continuando con su compromiso de encontrar soluciones tecnológicas para diversos campos y ámbitos. Su consejo para aquellos que se inician en proyectos similares es valioso: "Dar el primer paso siempre da miedo, esto se afronta cara a cara. Una vez hayas caminado, temeroso y con el cuerpo temblando, verás que es algo en lo que muchos te apoyarán." Además de su dedicación a la ciencia, Juan Antonio tiene una vida rica en hobbies que incluyen juegos de rol como Pathfinder y Dungeons & Dragons, disfrutar de la música, ver series, comer y leer. Estos intereses no solo enriquecen su vida personal sino que también le aportan un equilibrio necesario para su trabajo científico.
             
             El proyecto de Juan Antonio en Maikron es un claro ejemplo de cómo la pasión por la tecnología y el cuidado del medio ambiente pueden fusionarse para crear soluciones significativas que benefician tanto a nuestra sociedad como a nuestro planeta.
@@ -385,7 +392,7 @@
     </section>
 
     <!-- seccion servicio social -->
-    <section class="section__projects bg-white">
+    <section class="section__projects bg-white" id="SERVICIO">
     
       <div class="container projects__content">
         
@@ -442,7 +449,7 @@
     <!-- seccion acerca de -->
     <section class="section__projects" id="projects">
       
-      <div class="bg-dark">
+      <div class="bg-dark" id="HISTORIA">
         <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
           <h2 class="projects__title section__title">
             <span class="text-white">
@@ -463,7 +470,7 @@
         </div>
       </div>
     
-      <div class="f2">
+      <div class="f2" id="MISION">
         <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
 
           <h2 class="projects__title section__title">
@@ -483,7 +490,7 @@
         </div>
       </div>
       
-      <div class="f1">
+      <div class="f1" id="VISION">
         <div class="container projects__content " data-aos="fade-right" data-aos-duration="950">
   
           <h2 class="projects__title section__title">

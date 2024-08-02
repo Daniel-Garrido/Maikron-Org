@@ -51,6 +51,49 @@ p{
   line-height: 2rem;
 }
 
+/* estilos a los parrafos para guardar la informacion */
+.hidden {
+  height: 0;
+  opacity: 0;
+  display: none;
+  transition: height 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+/* icono para ver la informacion */
+.toggle-button {
+  width: 30px;
+ 
+  text-align: center;
+  font-size: 30px;
+ 
+  color: white;
+
+  text-decoration: none;
+  padding: 10px 0px 10px;
+}
+
+.toggle-button:hover{
+ background-color: var(--color-texto);
+ cursor: pointer;
+ transition: all 0.5s;
+ color: black;
+
+}
+
+.project-description {
+  opacity: 1;
+  transition: height 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
 .section__projects{
   padding-top: 4rem;
   padding-bottom: 4rem;
