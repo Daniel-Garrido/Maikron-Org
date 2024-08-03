@@ -159,7 +159,7 @@ header {
   background-image: url('../img/fondo.jpg');
   animation: moveBackground 25s linear infinite; /* animacion */
   background-size: 150% 100%; /* Asegura que la imagen sea lo suficientemente grande para moverse */
-  background-repeat: no-repeat;
+
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
