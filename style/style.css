@@ -1,10 +1,10 @@
 /*---animacion de imagenes----*/
 @keyframes moveBackground {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 100% 0%;
   }
 }
 
@@ -161,13 +161,14 @@ header {
 .section_presentacion {
   background-color: var(--color-fondo-2);
   position: relative;
-  background-image: url('../img/fondo.jpg');
   background-size: cover;
   background-position: center;
+  background-image: url('../img/fondo.jpg');
+  animation: moveBackground 25s linear infinite; /* animacion */
+  background-size: 150% 100%; /* Asegura que la imagen sea lo suficientemente grande para moverse */
   background-repeat: no-repeat;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  animation: moveBackground 10s linear infinite; /* animacion */
 }
 
 .section_presentacion::before {
@@ -220,7 +221,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   padding: 2rem;
-  animation: moveBackground 20s linear infinite; /* animacion */
+  background-size: 120% 100%; /* Asegura que la imagen sea lo suficientemente grande para moverse */
+  animation: moveBackground 5s linear infinite; /* animacion */
 }
 
 .Seccion__ICCBR::before {
