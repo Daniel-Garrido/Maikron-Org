@@ -1,0 +1,66 @@
+.navbar {
+  background-color: var(--color-fondo);
+  padding: 1rem; /* Ajusta el padding para aumentar la altura del navbar */
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--c-yellow-primary);
+}
+
+.nav-link:active {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white; /* Color inicial del enlace */
+}
+
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link:focus, 
+.navbar-nav .nav-link:active {
+  color: white; /* Color del enlace en hover, focus y active */
+  text-decoration: none; /* Elimina la decoración del texto */
+}
+
+.navbar-toggler {
+  text-decoration: none;
+  color: var(--color-fondo); /* Cambia el color del botón a blanco */
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Cambia el ícono a blanco */
+}
+
+header {
+  position: relative;
+  padding: 0; /* Elimina el padding para el header */
+  background-color: var(--color-fondo);
+  margin: 0 0 1rem 0; /* Margen solo en la parte inferior */
+}
+
+.navbar {
+  height: 6rem; /* Ajusta la altura del navbar */
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido del navbar */
+}
+
+.img {
+  width: 120px;
+  position: absolute; /* Posiciona el logo de manera absoluta */
+  top: 35%; /* Alinea verticalmente al centro */
+  left: 1rem; /* Ajusta según sea necesario para la posición horizontal */
+  transform: translateY(-50%); /* Ajusta para centrar el logo verticalmente */
+  margin: 1rem 0; /* Añade margen arriba y abajo */
+  z-index: 10;
+}
+
+.navbar-nav {
+  margin-left: 150px; /* Desplaza las secciones un poco más a la derecha */
+}
