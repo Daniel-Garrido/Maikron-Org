@@ -268,6 +268,17 @@ header {
 .footer-content li{
   padding-top: 1.2rem;
 }
+/* --------------estilos a la seccion ICAIM------------ */
+.Seccion__ICAIM{
+  background-color: var(--color-fondo-2);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  background-size: 130% 112%; /* Asegura que la imagen sea lo suficientemente grande para moverse */
+  animation: moveBackground 15s linear infinite; /* animacion */
+}
 
 /* ----------------------Responsive desing------------------------------- */
 @media (max-width: 600px) {
@@ -335,7 +346,6 @@ header {
     
     height: 100px;
   }
-
   
    /*---------------------- estilos al pie de pagina --------------------*/
   .footer-content li{
