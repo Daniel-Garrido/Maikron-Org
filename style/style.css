@@ -383,8 +383,12 @@ header {
   /* estilos a la seccion del ICAIM */
   .img-section-2{
     background-color: var(--color-texto);
-    
     height: 100px;
+  }
+    .Seccion__ICAIMH{
+    padding: 2rem;
+    background-size: 250% 100%; /* Asegura que la imagen sea lo suficientemente grande para moverse */
+    animation: moveBackground 13s linear infinite; /* animacion */
   }
   
    /*---------------------- estilos al pie de pagina --------------------*/
