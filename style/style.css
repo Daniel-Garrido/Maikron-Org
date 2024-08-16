@@ -191,6 +191,11 @@ header {
   top: 1rem;
 }
 
+.big-text {
+  font-size: 2rem; /* Puedes ajustar el tamaño según lo que necesites */
+}
+
+
 /* -----------------------------estilos a las secciones ------------------------------ */
 .projects__content{
   padding-top: 1rem;
